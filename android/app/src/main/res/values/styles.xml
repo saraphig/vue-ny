@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:datePickerDialogTheme">@style/Date.Theme</item>
+        <item name="colorAccent">#41A259</item>
+    </style>
+    <style name="Date.Theme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#41A259</item>
+        <item name="android:textColorPrimary">#41A259</item>
+    </style>
+
+</resources>

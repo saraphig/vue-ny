@@ -1,0 +1,11 @@
+/**
+ *
+ * Copyright 2018-present rn_nongye
+ *
+ */
+
+export const UPDATE_REGION_CURRENT = 'UPDATE_REGION_CURRENT';
+export const MONITOR_LIST = 'MONITOR_LIST';
+export const GET_MORE_MONITOR = 'GET_MORE_MONITOR';
+export const GET_MONITOR_CURRENT = 'GET_MONITOR_CURRENT';
+export const UPDATE_MONITOR_LIST_TOTAL = 'UPDATE_MONITOR_LIST_TOTAL';

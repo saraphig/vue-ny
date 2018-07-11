@@ -1,0 +1,52 @@
+{
+  "name": "rn_nongye",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "restart": "npm start -- --reset-cache",
+    "link": "./node_modules/.bin/react-native link",
+    "android": "./node_modules/.bin/react-native run-android",
+    "ios": "./node_modules/.bin/react-native run-ios",
+    "build:ios": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.js --platform ios --dev false --bundle-output ./ios/bundle/index.ios.jsbundle --assets-dest ./ios/bundle",
+    "build:android": "cd ./android && ./gradlew assembleRelease && cd ..",
+    "test": "jest",
+    "upload": "node ./scripts/upload.js",
+    "iconfont": "node ./scripts/iconfont.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dayjs": "^1.6.10",
+    "md5": "^2.2.1",
+    "prop-types": "^15.6.1",
+    "react": "16.3.1",
+    "react-native": "0.55.3",
+    "react-native-calendars": "git+https://github.com/zackmore/react-native-calendars.git",
+    "react-native-datepicker": "^1.7.2",
+    "react-native-sortable-grid": "^2.0.0",
+    "react-native-storage": "^0.2.2",
+    "react-native-svg": "^6.3.1",
+    "react-native-swipe-gestures": "^1.0.2",
+    "react-native-swiper": "^1.5.13",
+    "react-native-vector-icons": "^4.6.0",
+    "react-native-view-shot": "^2.3.0",
+    "react-native-vlc-player": "git+https://github.com/caiboyi/react-native-vlc-player.git#9d5c038dc28feb5d7a751e263aaf25a01c4f5de4",
+    "react-navigation": "^2.3.1",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-jest": "22.4.3",
+    "babel-plugin-module-alias": "^1.6.0",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.4.3",
+    "react-native-dotenv": "^0.1.1",
+    "react-test-renderer": "16.3.1",
+    "shelljs": "^0.8.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
