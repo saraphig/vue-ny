@@ -1,5 +1,0 @@
-export const GET_ALL_AREAS = 'GET_ALL_AREAS';
-export const GET_ALL_AREAS_DONE = 'GET_ALL_AREAS_DONE';
-export const GET_ALL_AREAS_ERROR = 'GET_ALL_AREAS_ERROR';
-
-export const SELECT_AREA = 'SELECT_AREA';
